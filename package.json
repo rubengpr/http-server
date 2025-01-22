@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-first-project",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rubengpr/http-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rubengpr/http-server/issues"
+  },
+  "homepage": "https://github.com/rubengpr/http-server#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
