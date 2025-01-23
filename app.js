@@ -2,17 +2,22 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-    console.log("This is the homepage")
+    res.send("This is the homepage")
 });
 
 app.get('/about', (req, res) => {
-    console.log("This is the about page")
+    res.send("This is the about page")
 });
 
 app.get('/contact-me', (req, res) => {
-    console.log("This is the contact me page")
+    res.send("This is the contact page")
 });
 
-app.get('/404', (req, res) => {
-    console.log("This is the error page")
+app.use((req, res) => {
+    res.status(404).send("Page not found!");
+});
+
+const PORT = 3000;
+app.listen(PORT, () => {
+  console.log(`My first Express app - listening on port ${PORT}!`);
 });
